@@ -34,50 +34,22 @@ param (
 
 # Registry data to add
 $addRegData = @"
-  Windows Registry Editor Version 5.00
+Windows Registry Editor Version 5.00
 
-  ; Created by:Shawn Brink
-  ; Created on: August 13, 2016
-  ; Updated on: January 26, 2021
-  ; Tutorial: https://www.tenforums.com/tutorials/60175-open-powershell-window-here-context-menu-add-windows-10-a.html
-  
-  [HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell]
-  @="@shell32.dll,-8508"
-  "Extended"=-
-  "Icon"="powershell.exe"
-  "NoWorkingDirectory"=""
-  "ShowBasedOnVelocityId"=dword:00639bc8
-  
-  [HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell\command]
-  @="powershell.exe -noexit -command Set-Location -literalPath '%V'"
-  
-  [HKEY_CLASSES_ROOT\Directory\shell\PowerShell]
-  @="@shell32.dll,-8508"
-  "Extended"=-
-  "Icon"="powershell.exe"
-  "NoWorkingDirectory"=""
-  "ShowBasedOnVelocityId"=dword:00639bc8
-  
-  [HKEY_CLASSES_ROOT\Directory\shell\PowerShell\command]
-  @="powershell.exe -noexit -command Set-Location -literalPath '%V'"
-  
-  [-HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PowerShell]
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell]
+@="@shell32.dll,-8508"
+"Icon"="powershell.exe"
+"MUIVerb"="Open PowerShell Here"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell\command]
+@="powershell.exe -noexit"
 "@
 
 # Registry data to remove
 $removeRegData = @"
   Windows Registry Editor Version 5.00
 
-  ; Created by: Shawn Brink
-  ; Created on: August 13th 2016
-  ; Updated on: December 10th 2016
-  ; Tutorial: http://www.tenforums.com/tutorials/60175-open-powershell-window-here-context-menu-add-windows-10-a.html
-  
-  [-HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell]
-  
-  [-HKEY_CLASSES_ROOT\Directory\shell\PowerShell]
-  
-  [-HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PowerShell]  
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell]
 "@
 
 $powershellCoreData = @"

@@ -6,8 +6,8 @@
 
   -Add                          Adds the context menu option (powershell.exe)
   -AddPowerShellCore            Adds the context menu option for PowerShell Core (pwsh.exe)
-  -Remove                       Unistalls the context menu option for PowerShell (powershell.exe)
-  -RemovePowerShellCore         Unistalls the context menu option for PowerShell Core (pwsh.exe)
+  -Remove                       Removes the context menu option for PowerShell (powershell.exe)
+  -RemovePowerShellCore         Removes the context menu option for PowerShell Core (pwsh.exe)
 .EXAMPLE
 .\PowerShell-ContextMenu.ps1 -Add
 .EXAMPLE
@@ -41,24 +41,24 @@ $addRegData = @"
   ; Updated on: January 26, 2021
   ; Tutorial: https://www.tenforums.com/tutorials/60175-open-powershell-window-here-context-menu-add-windows-10-a.html
   
-  [HKEY_CLASSES_ROOT\Directory\Background\shell\Powershell]
+  [HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell]
   @="@shell32.dll,-8508"
   "Extended"=-
   "Icon"="powershell.exe"
   "NoWorkingDirectory"=""
   "ShowBasedOnVelocityId"=dword:00639bc8
   
-  [HKEY_CLASSES_ROOT\Directory\Background\shell\Powershell\command]
+  [HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell\command]
   @="powershell.exe -noexit -command Set-Location -literalPath '%V'"
   
-  [HKEY_CLASSES_ROOT\Directory\shell\Powershell]
+  [HKEY_CLASSES_ROOT\Directory\shell\PowerShell]
   @="@shell32.dll,-8508"
   "Extended"=-
   "Icon"="powershell.exe"
   "NoWorkingDirectory"=""
   "ShowBasedOnVelocityId"=dword:00639bc8
   
-  [HKEY_CLASSES_ROOT\Directory\shell\Powershell\command]
+  [HKEY_CLASSES_ROOT\Directory\shell\PowerShell\command]
   @="powershell.exe -noexit -command Set-Location -literalPath '%V'"
   
   [-HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PowerShell]

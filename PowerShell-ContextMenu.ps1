@@ -19,7 +19,7 @@
 .NOTES
     Version      : 0.0.1
     Created by   : asheroto
-    Date Coded   : 2021-02-03
+    Date Coded   : 2021-02-04
 .LINK
 GitHub Repo: https://github.com/asheroto/Add-PowerShell-to-Context-Menu
 #>

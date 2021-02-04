@@ -7,12 +7,12 @@
 
 **PowerShell is evolving.**  PowerShell.exe's latest version is 5.1, whereas PowerShell Core, the next generation of PowerShell, is version 7.1.  If you haven't upgraded to **PowerShell Core** / PowerShell 7, [check it out](https://github.com/powershell/powershell).
 
-|Parameter|Description|
-|--|--|
-|-Add|Adds PowerShell to the context menu|
-|-AddPowerShellCore|Adds PowerShell Core to the context menu|
-|-Remove|Removes PowerShell from the context menu|
-|-RemovePowerShellCore|Removes PowerShell Core from the context menu|
+|Parameter|Description|PowerShell Executable (for reference)
+|--|--|--|
+|-Add|Adds PowerShell to the context menu|powershell.exe|
+|-AddPowerShellCore|Adds PowerShell Core to the context menu|pwsh.exe|
+|-Remove|Removes PowerShell from the context menu|powershell.exe|
+|-RemovePowerShellCore|Removes PowerShell Core from the context menu|pwsh.exe|
 
 **You need to log off and log in for changes to take effect.  Alternatively you can restart your computer.**
 

@@ -33,3 +33,13 @@
 **Remove  PowerShell Core to the Context Menu:**
 
 `.\PowerShell-ContextMenu.ps1 -RemovePowerShellCore`
+
+## Installation
+
+You can either [download the latest ps1 from Releases](https://github.com/asheroto/PowerShell-ContextMenu/releases/latest/download/PowerShell-ContextMenu.ps1), or type the following command in PowerShell:
+
+`Install-Script PowerShell-ContextMenu`
+
+It should install from [PowerShell Gallery](https://www.powershellgallery.com/packages/PowerShell-ContextMenu) automatically. You may need to answer **Yes** to a few prompts first.
+
+After installed, you can just open PowerShell and reference `PowerShell-ContextMenu.ps1` from any directory.

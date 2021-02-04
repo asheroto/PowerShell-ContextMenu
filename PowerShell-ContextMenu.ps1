@@ -1,3 +1,38 @@
+<#PSScriptInfo
+
+.VERSION 0.3
+
+.GUID 146686c2-55d0-4817-8e99-b34c226f38c5
+
+.AUTHOR asherto
+
+.COMPANYNAME
+
+.COPYRIGHT
+
+.TAGS PowerShell Context Menu Add Remove Install Uninstall
+
+.LICENSEURI
+
+.PROJECTURI https://github.com/asheroto/PowerShell-in-Context-Menu
+
+.ICONURI
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS
+
+.EXTERNALSCRIPTDEPENDENCIES
+
+.RELEASENOTES
+[Version 0.1] - Initial Release
+[Version 0.2] - Metadata fixes
+[Version 0.3] - Metadata fixes
+
+.PRIVATEDATA
+
+#>
+
 <#
 .SYNOPSIS
   Adds/Removes PowerShell or PowerShell Core to the context menu of directories.
@@ -17,7 +52,7 @@
 .EXAMPLE
 .\PowerShell-ContextMenu.ps1 -RemovePowerShellCore
 .NOTES
-    Version      : 0.0.1
+    Version      : 0.2
     Created by   : asheroto
     Date Coded   : 2021-02-04
 .LINK

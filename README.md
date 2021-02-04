@@ -9,10 +9,10 @@
 
 |Parameter|Description|PowerShell Executable (for reference)
 |--|--|--|
-|-Add|Adds PowerShell to the context menu|powershell.exe|
-|-AddPowerShellCore|Adds PowerShell Core to the context menu|pwsh.exe|
-|-Remove|Removes PowerShell from the context menu|powershell.exe|
-|-RemovePowerShellCore|Removes PowerShell Core from the context menu|pwsh.exe|
+|-Add|Adds PS to the context menu|powershell.exe|
+|-AddPowerShellCore|Adds PS Core to the context menu|pwsh.exe|
+|-Remove|Removes PS from the context menu|powershell.exe|
+|-RemovePowerShellCore|Removes PS Core from the context menu|pwsh.exe|
 
 **You need to log off and log in for changes to take effect.  Alternatively you can restart your computer.**
 
